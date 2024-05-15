@@ -17,7 +17,7 @@ const Users = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:9000")
+      .get("https://mern-crud-sh3a.onrender.com")
       .then((result) => {
         setUsers(result.data);
         // console.log(result.data);
@@ -27,7 +27,7 @@ const Users = () => {
 
   const handleDelete = (id) => {
     axios
-      .delete("http://localhost:9000/deleteUser/" + id)
+      .delete("https://mern-crud-sh3a.onrender.com/deleteUser/" + id)
       .then((res) => {
         console.log(res);
         window.location.reload();

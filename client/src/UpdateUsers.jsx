@@ -12,7 +12,7 @@ const UpdateUsers = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:9000/getUser/${id}`)
+      .get(`https://mern-crud-sh3a.onrender.com/getUser/${id}`)
       .then((result) => {
         console.log(result);
 
@@ -26,7 +26,7 @@ const UpdateUsers = () => {
   const handleUpdate = (e) => {
     e.preventDefault();
     axios
-      .put(`http://localhost:9000/updateUser/${id}`, { name, email, age })
+      .put(`https://mern-crud-sh3a.onrender.com/updateUser/${id}`, { name, email, age })
       .then((result) => {
         console.log(result);
         navigate("/");

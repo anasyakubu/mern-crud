@@ -11,7 +11,11 @@ const CreateUsers = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:9000/createUser", { name, email, age })
+      .post("https://mern-crud-sh3a.onrender.com/createUser", {
+        name,
+        email,
+        age,
+      })
       .then((result) => {
         console.log(result);
         navigate("/");
