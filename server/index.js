@@ -11,7 +11,7 @@ app.use(express.json());
 mongoose.mongoose.connect(process.env.MONGODB_URL);
 
 // Fetch [All]
-app.get("/", (req, res) => {
+app.get("/getUser", (req, res) => {
   UserModel.find({})
     .then((users) => res.json(users))
     .catch((err) => console.log(err));
