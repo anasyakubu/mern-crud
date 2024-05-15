@@ -17,7 +17,7 @@ const Users = () => {
 
   useEffect(() => {
     axios
-      .get("https://mern-crud-sh3a.onrender.com/getUser")
+      .get("https://mern-crud-sh3a.onrender.com")
       .then((result) => {
         setUsers(result.data);
         // console.log(result.data);
