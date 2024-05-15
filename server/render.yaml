@@ -1,0 +1,15 @@
+# Exported from Render on 2024-05-15T16:48:56Z
+services:
+- type: web
+  name: mern-crud
+  runtime: node
+  repo: https://github.com/anasyakubu/mern-crud
+  plan: free
+  envVars:
+  - key: MONGODB_URL
+    sync: false
+  region: oregon
+  buildCommand: yarn
+  startCommand: node index.js
+  rootDir: server
+version: "1"
