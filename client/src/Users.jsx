@@ -19,8 +19,8 @@ const Users = () => {
     axios
       .get("https://mern-crud-sh3a.onrender.com/users")
       .then((result) => {
-        setUsers(result.data);
-        // console.log(result.data);
+        setUsers(result.data.data);
+        console.log(result.data.data);
       })
       .catch((err) => console.log(err));
   });
